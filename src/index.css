@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Anton', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --color-industrial-light: oklch(98% 0.005 240);
+  --color-industrial-card: oklch(100% 0 0);
+  --color-copper-500: oklch(58% 0.21 45);
+  --color-copper-400: oklch(65% 0.19 48);
+  --color-copper-600: oklch(50% 0.22 42);
+  --color-gold-amber: oklch(68% 0.2 60);
+
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 5.5rem);
+  --text-h2: clamp(2rem, 3.5vw + 0.5rem, 3.75rem);
+}
+
+@layer utilities {
+  .text-gradient-copper {
+    background: linear-gradient(135deg, oklch(25% 0.05 240) 0%, oklch(58% 0.21 45) 50%, oklch(50% 0.22 42) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
